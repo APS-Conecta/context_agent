@@ -138,7 +138,8 @@ DEFAULT_ITEM_COUNT_THRESHOLD = 10
 ITEM_COUNT_THRESHOLD_SETTING_ID = 'item_count_threshold'
 
 # MCP tools the admin vouches for, so they are never confirmed: a comma or newline
-# separated list of tool names, or '*' for all of them.
+# separated list of tool names, or '*' for all of them. A tool its server marks as
+# writing is left out (see ex_app.lib.all_tools.mcp.is_write).
 MCP_ALWAYS_ALLOW_SETTING_ID = 'mcp_always_allow'
 
 _ATTR = 'impulse_hook'

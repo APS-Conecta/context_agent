@@ -273,7 +273,8 @@ SETTINGS = SettingsForm(
             description=_(
                 "Context Agent cannot tell what an MCP tool does, so it asks the user to confirm every"
                 " call to one. List the names of MCP tools you trust, separated by commas, to let them"
-                " run without asking, or enter * to allow all MCP tools."
+                " run without asking, or enter * to allow all MCP tools. A tool its MCP server marks as"
+                " changing something is still confirmed on every call."
             ),
             type=SettingsFieldType.TEXT,
             default="",
